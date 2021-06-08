@@ -9,7 +9,7 @@ const randomMessage = {
                 'I will go for a run', 'I will dance', 'I will treat myself',
                 'I will cry', 'I will meditate'],
     // set getter functions
-    get myFeeling(){
+    get myFeelings(){
         return this._myFeelings;
     },
     get myThoughts(){
@@ -22,6 +22,15 @@ const randomMessage = {
     pickRandom(stringArray){
         let randomIndex = Math.floor(Math.random() * stringArray.length);
         return stringArray[randomIndex];
+    },
+    // create message generator
+    generateMessage(){
+        let randomFeeling = this.pickRandom(this.myFeelings);
+        let randomThought = this.pickRandom(this.myThoughts);
+        let randomBehavior = this.pickRandom(this.myBehaviors);
+        return `Today, ${randomFeeling} because my thought is that ${randomThought}.
+                Therefore, ${randomBehavior}.`;
     }
-
 }
+
+console.log(randomMessage.generateMessage());

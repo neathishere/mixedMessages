@@ -14,13 +14,13 @@
 
 ## How to Use
 
-Open your command line application
+* Open your command line application
 
-Type in:
+* Type in:\
     ```
     $ node script.js
     ```
-This will generate a random string. To run the script again, repeat the above step.
+* This will generate a random string. To run the script again, repeat the above step.
 
-Try running it a few times. Each time should generate a new random string.
+* Try running it a few times. Each time should generate a new random string.
 

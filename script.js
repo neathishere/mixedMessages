@@ -17,6 +17,11 @@ const randomMessage = {
     },
     get myBehaviors(){
         return this._myBehaviors;
+    },
+    // add a randomizer method
+    pickRandom(stringArray){
+        let randomIndex = Math.floor(Math.random() * stringArray.length);
+        return stringArray[randomIndex];
     }
 
 }

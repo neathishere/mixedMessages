@@ -16,7 +16,7 @@
 
 * Open your command line application
 
-* Type in:\
+* Type in:
     ```
     $ node script.js
     ```

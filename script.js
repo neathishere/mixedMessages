@@ -28,8 +28,7 @@ const randomMessage = {
         let randomFeeling = this.pickRandom(this.myFeelings);
         let randomThought = this.pickRandom(this.myThoughts);
         let randomBehavior = this.pickRandom(this.myBehaviors);
-        return `Today, ${randomFeeling} because my thought is that ${randomThought}.
-                Therefore, ${randomBehavior}.`;
+        return `Today, ${randomFeeling} because my thought is that ${randomThought}. Therefore, ${randomBehavior}.`;
     }
 }
 
